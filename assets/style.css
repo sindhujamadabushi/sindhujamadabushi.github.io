@@ -4,13 +4,17 @@
 }
 
 a:hover {
-    /* font-weight: 400; */
+    font-weight: 400; 
     text-decoration: none;
     transition-duration: 0.3s;
     transition-timing-function: linear;
-    /* color: #444; */
+    color: #444; 
 }
 
+p {
+
+    color: black
+}
 
 .noter {
     font-size: 9pt;
