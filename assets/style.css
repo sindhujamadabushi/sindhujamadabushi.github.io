@@ -54,11 +54,11 @@ a {
 }
 
 .papertitle{
-    color: black; 
-    font-size: 18px; 
-    font-weight: 500; 
-    text-decoration: none; 
-    font-style: normal;
+    color: black !important; 
+    font-size: 18px !important; 
+    font-weight: 500 !important; 
+    text-decoration: none !important; 
+    font-style: normal !important;
 
 }
 
