@@ -11,10 +11,19 @@ a:hover {
     color: #B22222; 
 }
 
-p,a {
+p{
 
-    color: black
+    color: black;
+    font-size: 18px;
+    
 }
+
+a {
+    color: #bf0416 !important;
+    font-size: 18px;
+    
+}
+
 
 .noter {
     font-size: 9pt;
