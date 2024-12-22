@@ -1,6 +1,4 @@
-make the image bigger
-make icons
-change color of links
+
 add experience
 projects
 volunteering
