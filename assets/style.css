@@ -1,3 +1,14 @@
+.bullet-award {
+  display: inline-block;
+  background-image: url('../images/bulletpoint.png'); /* relative path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 .pb-2, .py-2{
     padding-bottom: 0.1rem!important;
 }
