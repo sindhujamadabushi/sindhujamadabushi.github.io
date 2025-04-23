@@ -1,3 +1,7 @@
+.pb-2, .py-2{
+    padding-bottom: 0.1rem!important;
+}
+
 .instilogo {
     height: 50px;
     filter: grayscale(20%);
