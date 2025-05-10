@@ -161,17 +161,18 @@ a {
     height: auto;
   }
     .icons{
-        margin-left:100px;
+        margin-left:45px;
         
     }
-    p{
-      width:470px  
-    }
+   
     .name{
         padding-left:50px;
+        
+        
         /* margin-left: 0px; */
         
     }
 }
 
 }
+
