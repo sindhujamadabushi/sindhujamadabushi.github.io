@@ -132,31 +132,27 @@ a {
 
 
 @media only screen and (max-width: 768px) {
-  /* make the row stack */
+  /* stack everything as before… */
   .profile-table tr {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .profile-table td.img-cell { order: 1; }
+  .profile-table td.info-cell { order: 2; }
 
-  /* make each cell flex‑column too, so its contents stack nicely */
-  .profile-table td {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-  }
-
-  /* swap the two cells: img-cell first, info-cell second */
-  .profile-table td.img-cell {
-    order: 1;
-  }
+  /* but now left‑align title + icons */
   .profile-table td.info-cell {
-    order: 2;
+    align-items: flex-start;   /* pull name & icons to the left */
+    text-align: left;          /* make the <p> text left aligned */
+  }
+  .profile-table td.info-cell .icons {
+    display: flex;
+    justify-content: flex-start;  /* ensure the icon row hugs the left edge */
+    margin-top: 10px;             /* optional spacing */
   }
 
-  /* optional: shrink the image on mobile */
+  /* optionally shrink image… */
   .profile-table .profilepic {
     max-width: 60%;
     height: auto;
