@@ -144,17 +144,34 @@ a {
   /* but now left‑align title + icons */
   .profile-table td.info-cell {
     align-items: flex-start;   /* pull name & icons to the left */
-    text-align: left;          /* make the <p> text left aligned */
+    text-align: left;   
   }
   .profile-table td.info-cell .icons {
     display: flex;
     justify-content: flex-start;  /* ensure the icon row hugs the left edge */
-    margin-top: 10px;             /* optional spacing */
+    margin-top: 10px;  
+    
+      /* optional spacing */
   }
 
   /* optionally shrink image… */
   .profile-table .profilepic {
-    max-width: 60%;
+    max-width: 80%;
+    border-radius: 100px;
     height: auto;
   }
+    .icons{
+        margin-left:100px;
+        
+    }
+    p{
+      width:470px  
+    }
+    .name{
+        padding-left:50px;
+        /* margin-left: 0px; */
+        
+    }
+}
+
 }
