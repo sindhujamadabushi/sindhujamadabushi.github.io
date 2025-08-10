@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  
   <head>
 
     <!-- Required meta tags -->
@@ -8,11 +9,6 @@
     <meta name="description" content="PhD Student at Virginia Tech">
     <meta name="author" content="Sindhuja Madabushi">
     <meta name="theme-color" content="#222222">
-
-<!--     <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/SM.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/nicons/favicon-16x16.png">
- -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/SM.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/SM_32.png">
@@ -25,8 +21,55 @@
       
     <title>Sindhuja Madabushi</title>
   </head>
+
+<script>
+  // mobile menu toggle
+  const toggleBtn = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('primary-nav');
+  if (toggleBtn && nav) {
+    toggleBtn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // close menu after clicking a link
+    nav.querySelectorAll('a[href^="#"]').forEach(a =>
+      a.addEventListener('click', () => nav.classList.remove('open'))
+    );
+  }
+
+  // highlight active section link while scrolling
+  const links = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+  const linkMap = new Map(links.map(a => [a.getAttribute('href'), a]));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      const id = '#'+e.target.id;
+      const link = linkMap.get(id);
+      if (!link) return;
+      if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l === link));
+    });
+  }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+  document.querySelectorAll('section[id]').forEach(sec => io.observe(sec));
+</script>
+  
   <body>
-<!-- <h1>Website under construction</h1>  -->
+
+    <a class="skip-link" href="#about">Skip to content</a>
+
+<header class="site-nav" role="banner">
+  <div class="nav-inner">
+    <a href="/" class="brand">Sindhuja Madabushi</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="nav-links" role="navigation" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="assets/cv/Sindhuja_Madabushi_CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="#awards-service">Awards &amp; Service</a>
+    </nav>
+  </div>
+</header>
+
+    
+
     <div class="container pt-5 allstuffp" style="padding-top: 0px !important;">
 
             <div class="row pt-5 allstuff" style="padding-top: 40px !important;margin-bottom: 100px">
