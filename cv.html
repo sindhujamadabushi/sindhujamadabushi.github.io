@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Sindhuja Madabushi</title>
+  <meta name="description" content="CV of Sindhuja Madabushi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <style>
+    :root {
+      --text: #222;
+      --muted: #666;
+      --accent: #0f766e;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+    }
+    html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: var(--text); background: var(--bg); }
+    .page { max-width: 980px; margin: 40px auto; padding: 0 18px 80px; }
+    header.cv-header { display: grid; grid-template-columns: 1fr auto; grid-gap: 1rem; align-items: center; margin-bottom: 28px; }
+    .name { font-size: 2rem; font-weight: 700; letter-spacing: .4px; margin: 0; }
+    .subtitle { color: var(--muted); margin: 4px 0 0; font-weight: 500; }
+    .contact a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    .chip { display:inline-block; border:1px solid var(--border); padding:4px 10px; border-radius:999px; font-size:.85rem; color:var(--muted); margin-right:6px; }
+    .section { margin-top: 36px; }
+    .section h2 { font-size: 1.15rem; font-weight: 700; letter-spacing: .6px; color: #111; margin-bottom: 12px; text-transform: uppercase; }
+    .item { padding: 14px 0; border-top: 1px solid var(--border); }
+    .item:first-child { border-top: none; }
+    .item .top { display:flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+    .role { font-weight: 600; }
+    .org { color: var(--muted); }
+    .date { color: var(--muted); font-size: .95rem; }
+    .loc { color: var(--muted); font-size: .95rem; }
+    .bullets { margin: 8px 0 0 16px; }
+    .bullets li { margin: 4px 0; }
+    .divider { height: 1px; background: var(--border); margin: 22px 0 10px; }
+    .download { margin-left: 10px; font-size: .95rem; }
+    @media (max-width: 576px) {
+      header.cv-header { grid-template-columns: 1fr; }
+      .item .top { flex-direction: column; align-items: flex-start; }
+      .date, .loc { margin-top: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="cv-header">
+      <div>
+        <h1 class="name">Sindhuja Madabushi</h1>
+        <p class="subtitle">Ph.D. Student, Computer Science — Virginia Tech</p>
+        <div class="contact">
+          <a href="mailto:msindhuja@vt.edu">msindhuja@vt.edu</a> ·
+          <a href="https://sindhujamadabushi.github.io" target="_blank" rel="noopener">sindhujamadabushi.github.io</a>
+          <a class="download" href="assets/cv/Sindhuja_Madabushi_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+
+      <div class="item">
+        <div class="top">
+          <div>
+            <div class="role">Ph.D. in Computer Science</div>
+            <div class="org">Virginia Tech</div>
+          </div>
+          <div class="date">2023 – Present</div>
+        </div>
+        <ul class="bullets">
+          <li>Coursework: Security Risks of Generative AI; Scientific Knowledge-Guided ML; Network Security; Optimization for ML; Deep Learning.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="top">
+          <div>
+            <div class="role">M.Sc. in Data and Knowledge Engineering</div>
+            <div class="org">Otto-von-Guericke Universität Magdeburg</div>
+          </div>
+          <div class="date">2016 – 2019</div>
+        </div>
+        <ul class="bullets">
+          <li>Coursework: Data Mining; Frequent Pattern Mining; Recommender Systems; Bayesian Networks; Advanced Databases; Distributed Data Management; Machine Learning; Information Retrieval.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="top">
+          <div>
+            <div class="role">B.Tech. in Computer Science and Engineering</div>
+            <div class="org">GITAM University, India</div>
+          </div>
+          <div class="date">2009 – 2013</div>
+        </div>
+        <ul class="bullets">
+          <li>Coursework: Probability & Statistics; Data Mining; Artificial Intelligence; Data Structures & Algorithms; Discrete Math; Databases; C, C++, Java & Unix Programming; Computer Architecture; Operating Systems.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Work Experience</h2>
+
+      <div class="item">
+        <div class="top">
+          <div>
+            <div class="role">Student Research Intern</div>
+            <div class="org">PisaSales CRM</div>
+          </div>
+          <div class="date">2017 – 2018</div>
+        </div>
+        <ul class="bullets">
+          <li>Evaluated visualization libraries and recommended adoption to senior management.</li>
+          <li>Implemented heat maps, chord diagrams, Venn diagrams, and hive plots; built a flexible visualization widget for customer sales dashboards.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="top">
+          <div>
+            <div class="role">Software Engineer I</div>
+            <div class="org">Innominds Software</div>
+          </div>
+          <div class="date">2015 – 2016</div>
+        </div>
+        <ul class="bullets">
+          <li>Developed UI elements (chatbots, visualizations, navigation components) for BenchmarkONE's CRM & Sales Automation toolkit.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="top">
+          <div>
+            <div class="role">Systems Engineer</div>
+            <div class="org">Tata Consultancy Services</div>
+          </div>
+          <div class="date">2013 – 2015</div>
+        </div>
+        <ul class="bullets">
+          <li>Built a communication portal (C# + MS SQL) for Microsoft India; migrated the portal to the cloud per client specifications.</li>
+          <li>Managed client communication and cloud-hosted content updates.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="research-interests">
+      <h2>Research Interests</h2>
+      <p>Federated Learning (FL); Privacy and Fairness in FL; Incentive Mechanisms in FL.</p>
+    </section>
+
+    <section class="section" id="selected-projects">
+      <h2>Selected Research Projects</h2>
+      <div class="item">
+        <div class="top">
+          <div class="role">P2VFL: Performance & Privacy‑enhanced Incentive Mechanism for VFL</div>
+          <div class="date">Present</div>
+        </div>
+        <ul class="bullets">
+          <li>Designed privacy‑preserving incentive mechanisms for vertical FL; worked with split neural networks to compute contributions and rewards.</li>
+          <li>Experience with differential privacy and homomorphic encryption.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="top">
+          <div class="role">Two‑Cloud Private Read Alignment to a Public Reference Genome</div>
+          <div class="date">2020 – 2022</div>
+        </div>
+        <ul class="bullets">
+          <li>Designed a scalable cloud algorithm for private DNA sequence alignment; evaluated accuracy and scalability using NGS datasets.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Technical Skills</h2>
+      <p>
+        <span class="chip">Python</span>
+        <span class="chip">C#</span>
+        <span class="chip">Java</span>
+        <span class="chip">SQL</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">LaTeX</span>
+        <span class="chip">PyTorch</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">scikit‑learn</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">Matplotlib</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Git</span>
+        <span class="chip">GCP</span>
+        <span class="chip">MPI</span>
+        <span class="chip">Neo4j</span>
+        <span class="chip">MongoDB</span>
+        <span class="chip">Cassandra</span>
+        <span class="chip">Redis</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">Bootstrap</span>
+        <span class="chip">D3.js</span>
+      </p>
+    </section>
+
+    <footer class="section" style="color:#888; font-size:.9rem;">
+      Last updated: <span id="updated"></span>
+    </footer>
+  </main>
+  <script>
+    // Light "last updated" stamp
+    document.getElementById('updated').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
