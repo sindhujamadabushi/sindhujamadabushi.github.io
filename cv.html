@@ -3,101 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae | Sindhuja Madabushi</title>
+  <title>Curriculum&nbsp;Vitae&nbsp;|&nbsp;Sindhuja&nbsp;Madabushi</title>
+  <!--
+    This standalone CV page was hand‑crafted to mirror the look and feel of
+    Ján Drgoňa’s CV page (https://drgona.github.io/cv/) while using only
+    local styles.  All styles are contained within this file so that it
+    can be dropped into a static site without depending on external CSS
+    frameworks.  The coloured date labels and clean typography evoke
+    the original theme’s aesthetic without copying its code.
+  -->
   <style>
+    /* Import Roboto from Google Fonts for a modern sans‑serif look */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+    :root {
+      --primary-colour: #a012c4; /* purple accent used for date labels */
+      --light-grey: #f5f5f5;
+      --dark-text: #333;
+      --muted-text: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: #fff;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--dark-text);
+      background-color: var(--light-grey);
     }
+
+    /* Page container centres the content and adds breathing room */
     .container {
       max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    h1, h2 {
-      margin-bottom: 0;
-    }
+
     h1 {
-      font-size: 2rem;
-      border-bottom: 3px solid #444;
-      padding-bottom: 5px;
+      margin-top: 0;
+      font-size: 2.2rem;
+      font-weight: 500;
     }
-    h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 3px;
-    }
+
     .section {
-      margin-bottom: 20px;
+      margin-top: 50px;
     }
-    .item {
-      margin-bottom: 15px;
+
+    .section h2 {
+      margin-bottom: 25px;
+      font-size: 1.6rem;
+      font-weight: 500;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 6px;
     }
-    .role {
-      font-weight: bold;
+
+    /* CV entry styling */
+    .cv-item {
+      position: relative;
+      padding-left: 110px;
+      margin-bottom: 40px;
     }
-    .org {
-      font-style: italic;
-      color: #555;
+
+    /* Date label sits flush to the left of each entry */
+    .cv-item .date-label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #fff;
+      background-color: var(--primary-colour);
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
-    .date {
-      float: right;
-      color: #777;
+
+    .cv-item h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
-    ul {
-      margin-top: 5px;
+
+    .cv-item .institution {
+      margin-top: 4px;
+      margin-bottom: 8px;
+      font-size: 1rem;
+      color: var(--muted-text);
+    }
+
+    .cv-item ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .cv-item ul li {
+      margin-bottom: 6px;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 600px) {
+      .cv-item {
+        padding-left: 0;
+      }
+      .cv-item .date-label {
+        position: static;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Sindhuja Madabushi</h1>
-    <p>Email: <a href="mailto:msindhuja@vt.edu">msindhuja@vt.edu</a> | Website: <a href="https://sindhujamadabushi.github.io" target="_blank">sindhujamadabushi.github.io</a></p>
+    <h1>Curriculum&nbsp;Vitae</h1>
 
-    <h2>Education</h2>
-    <div class="section">
-      <div class="item">
-        <span class="date">2023 – Present</span>
-        <div class="role">Ph.D. in Computer Science</div>
-        <div class="org">Virginia Tech</div>
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <h2>Education</h2>
+
+      <div class="cv-item">
+        <span class="date-label">2023&nbsp;&ndash;&nbsp;Present</span>
+        <h3>Ph.D. in Computer Science</h3>
+        <div class="institution">Virginia&nbsp;Tech</div>
         <ul>
-          <li>Coursework: Security Risks of Generative AI, Network Security, Optimization for ML, Deep Learning</li>
+          <li>Coursework: Security Risks of Generative&nbsp;AI; Scientific Knowledge‑Guided Machine&nbsp;Learning; Network Security; Optimization for Machine&nbsp;Learning; Deep&nbsp;Learning.</li>
         </ul>
       </div>
-      <div class="item">
-        <span class="date">2016 – 2019</span>
-        <div class="role">M.Sc. in Data and Knowledge Engineering</div>
-        <div class="org">Otto-von-Guericke Universität Magdeburg</div>
-      </div>
-      <div class="item">
-        <span class="date">2009 – 2013</span>
-        <div class="role">B.Tech. in Computer Science and Engineering</div>
-        <div class="org">GITAM University, India</div>
-      </div>
-    </div>
 
-    <h2>Work Experience</h2>
-    <div class="section">
-      <div class="item">
-        <span class="date">2017 – 2018</span>
-        <div class="role">Student Research Intern</div>
-        <div class="org">PisaSales CRM</div>
+      <div class="cv-item">
+        <span class="date-label">2016&nbsp;&ndash;&nbsp;2019</span>
+        <h3>M.Sc. in Data and Knowledge&nbsp;Engineering</h3>
+        <div class="institution">Otto‑von‑Guericke Universität Magdeburg</div>
+        <ul>
+          <li>Selected coursework: Data Mining; Frequent Pattern Mining; Recommender Systems; Bayesian Networks; Advanced Databases; Distributed Data Management; Machine&nbsp;Learning; Information Retrieval.</li>
+        </ul>
       </div>
-      <div class="item">
-        <span class="date">2015 – 2016</span>
-        <div class="role">Software Engineer I</div>
-        <div class="org">Innominds Software</div>
+
+      <div class="cv-item">
+        <span class="date-label">2009&nbsp;&ndash;&nbsp;2013</span>
+        <h3>B.Tech. in Computer Science and Engineering</h3>
+        <div class="institution">GITAM University, India</div>
+        <ul>
+          <li>Selected coursework: Probability&nbsp;&amp;&nbsp;Statistics; Data Mining; Artificial Intelligence; Data Structures &amp;&nbsp;Algorithms; Discrete Mathematics; Databases; Programming in C, C++,&nbsp;Java and Unix; Computer Architecture; Operating Systems.</li>
+        </ul>
       </div>
-      <div class="item">
-        <span class="date">2013 – 2015</span>
-        <div class="role">Systems Engineer</div>
-        <div class="org">Tata Consultancy Services</div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="section" id="experience">
+      <h2>Work&nbsp;Experience</h2>
+
+      <div class="cv-item">
+        <span class="date-label">2017&nbsp;&ndash;&nbsp;2018</span>
+        <h3>Student Research Intern</h3>
+        <div class="institution">PisaSales&nbsp;CRM</div>
+        <ul>
+          <li>Performed a detailed evaluation of existing visualization libraries and recommended one for integration into the company’s software system.</li>
+          <li>Implemented visualizations including heat maps, chord diagrams, Venn diagrams and hive plots.</li>
+          <li>Designed and integrated a flexible visualization widget to display customer sales data on a dashboard.</li>
+        </ul>
       </div>
-    </div>
+
+      <div class="cv-item">
+        <span class="date-label">2015&nbsp;&ndash;&nbsp;2016</span>
+        <h3>Software Engineer&nbsp;I</h3>
+        <div class="institution">Innominds&nbsp;Software</div>
+        <ul>
+          <li>Created versatile UI elements such as chatbots, visualizations and navigation menus for BenchmarkONE’s Customer Relationship Management and Sales Automation toolkit.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <span class="date-label">2013&nbsp;&ndash;&nbsp;2015</span>
+        <h3>Systems Engineer</h3>
+        <div class="institution">Tata&nbsp;Consultancy&nbsp;Services</div>
+        <ul>
+          <li>Developed a communication portal using C# and Microsoft SQL to distribute Microsoft India’s weekly newsletters.</li>
+          <li>Migrated the portal to the cloud to meet client specifications.</li>
+          <li>Managed client communications and maintained content hosted in the cloud.</li>
+        </ul>
+      </div>
+    </section>
   </div>
 </body>
 </html>
