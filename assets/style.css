@@ -19,7 +19,7 @@
 
 .bullet-award {
   display: inline-block;
-  background-image: url('../images/bulletpoint.png'); /* relative path */
+  background-image: url('../images/trophy.png'); /* relative path */
   background-size: contain;
   background-repeat: no-repeat;
   width: 16px;
