@@ -22,8 +22,8 @@
   background-image: url('../images/trophy.png'); /* relative path */
   background-size: contain;
   background-repeat: no-repeat;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   margin-right: 10px;
 }
