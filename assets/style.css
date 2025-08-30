@@ -72,6 +72,7 @@ a {
 
 .tag {
     padding-right: 2px;
+    font-weight: 600 !important;
 }
 
 .confshort {
@@ -143,7 +144,7 @@ a {
 .thisauthor {
     color: black;
     font-size: 18px;
-    font-weight: 550 !important;
+    font-weight: 600 !important;
     text-decoration: none;
     font-style: normal;
     color: #B22222 !important;
