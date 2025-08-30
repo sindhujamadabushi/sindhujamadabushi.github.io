@@ -4,6 +4,17 @@
   width: 200px;          /* Adjust to preferred size */
 }
 
+.papertitle{
+  color: rgb(34, 34, 34); 
+  font-size: 18px !important; 
+  font-weight: 300; 
+  font-style: normal;
+  text-decoration: none !important;
+  font-style: normal !important;
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
 .profile-figure img {
   width: 100%;
   height: auto;
