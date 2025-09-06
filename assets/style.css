@@ -288,8 +288,22 @@ html { scroll-behavior: smooth; }
     /* OR switch to: overflow-x: auto; -webkit-overflow-scrolling: touch; */
   }
   .icon-images{
-          width: 40px;
-          height: 40px !important;
+          width: 25px !important;
+          height: 25px !important;
+    
+  }
+  .name{
+    color: rgb(34, 34, 34) !important; 
+    font-family: Avenir !important; 
+    margin: 0px !important; 
+    font-size: 15pt !important;
+    margin-bottom:10px !important; 
+    margin-left:10px !important;
+    
+  }
+  .icons{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
     
   }
   
