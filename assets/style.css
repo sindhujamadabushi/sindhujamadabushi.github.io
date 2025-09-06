@@ -250,3 +250,41 @@ html { scroll-behavior: smooth; }
   }
   .nav-links.open { display: flex; }
 }
+
+@media (max-width: 768px) {
+  /* Option A: make it fit the screen (no horizontal scroll) */
+  .profile-table {
+    width: 100% !important;
+    max-width: 100%;
+    table-layout: fixed;          /* prevents cells from stretching beyond width */
+    border-collapse: collapse;
+  }
+  .profile-table td,
+  .profile-table th {
+    white-space: normal;          /* allow wrapping */
+    word-break: break-word;       /* legacy-safe wrap */
+    overflow-wrap: anywhere;      /* modern wrap for long tokens/URLs */
+  }
+  .profile-table img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Undo mobile nudges that can create overflow */
+  .profile-table .info-cell,
+  .profile-table .img-cell,
+  .profile-table .icons {
+    margin: 0 !important;
+  }
+
+  /* If the name/title is very long, gently scale it down on phones */
+  .profile-table .name {
+    font-size: clamp(18px, 6vw, 23pt);
+  }
+
+  /* If you’d rather allow sideways scroll instead of squishing content, use this on the parent */
+  .about {
+    overflow-x: hidden;           /* keep if using “fit” behavior above */
+    /* OR switch to: overflow-x: auto; -webkit-overflow-scrolling: touch; */
+  }
+}
