@@ -41,11 +41,11 @@
 
 .award-item{
   color: rgb(34, 34, 34); 
-  font-size: 12pt; 
-  font-weight: 300; 
+  font-size: 19pt; 
+  font-family: sans-serif; 
   text-decoration: none; 
   font-style: normal;
-  list-style:none;
+  list-style:none !important;
   align-items: flex-start; 
   display: flex;
   
